@@ -8,6 +8,9 @@ import android.provider.MediaStore
 import android.widget.Button
 import android.widget.ImageView
 
+//import org.tensorflow.lite.support.image.TensorImage
+//import org.tensorflow.lite.DataType
+
 // val = final, constante
 // var = se puede cambiar
 // fun = funciones --> fun greet(){...}
@@ -25,6 +28,7 @@ import android.widget.ImageView
 
 
 import android.os.Bundle
+import android.renderscript.Element
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
@@ -41,6 +45,8 @@ class MainActivity : AppCompatActivity() {
             if(result.resultCode == Activity.RESULT_OK) {//Si devuelve que se hizo bien el activity
                 val imageBitmap = result.data?.extras?.get("data") as Bitmap //De lo que devolvió, coger el data, y de ahí pasarlo a un Bitmap porque se ocupa para ponerlo en el imageView
                 image.setImageBitmap(imageBitmap)
+//                val tensorImage = TensorImage(DataType.FLOAT32)
+//                tensorImage.load(image)
             }
 
         }
