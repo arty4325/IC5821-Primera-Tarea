@@ -7,13 +7,28 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imgPic"
+        android:layout_width="326dp"
+        android:layout_height="280dp"
+        android:src="@tools:sample/avatars"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="389dp" />
+
+    <Button
+        android:id="@+id/btnTakePicture"
+        android:layout_width="219dp"
+        android:layout_height="212dp"
+        android:text="Take Picture"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="72dp" />
+
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="TextView"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="323dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
