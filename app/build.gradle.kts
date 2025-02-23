@@ -36,8 +36,6 @@ android {
 }
 
 dependencies {
-    implementation(libs.tensorflow.lite)
-    implementation(libs.tensorflow.tensorflow.lite.support)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
